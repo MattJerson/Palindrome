@@ -1,0 +1,17 @@
+package functions;
+import java.util.*;
+public class IsPalindrome {
+public static void main(String[] args) {   
+String O, Reverse = ""; 
+Scanner X = new Scanner(System.in);
+System.out.println("Enter A String To Check If It's A Palindrome");
+O = X.nextLine();
+int Length = O.length();
+for (int i = Length - 1; i >= 0; i--)
+Reverse = Reverse + O.charAt(i);
+if (O.equals(Reverse))
+System.out.println("String Is A Palindrome");
+else
+System.out.println("String Isn't A Palindrome");        
+}
+}
